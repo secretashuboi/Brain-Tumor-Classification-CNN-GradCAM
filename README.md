@@ -6,21 +6,29 @@
 
 
 
-\*\*CNN • ResNet18 • Transfer Learning • Grad-CAM • PyTorch • Computer Vision • Streamlit\*\*
+<p align="center">
+
+&#x20; <b>CNN • ResNet18 • Transfer Learning • Grad-CAM • PyTorch • Computer Vision • Streamlit</b>
+
+</p>
 
 
 
-\[!\[Python](https://img.shields.io/badge/Python-3.x-blue?logo=python\&logoColor=white)](https://www.python.org/)
+<p align="center">
 
-\[!\[PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-ee4c2c?logo=pytorch\&logoColor=white)](https://pytorch.org/)
+&#x20; <img src="https://img.shields.io/badge/Python-3.x-blue?logo=python\&logoColor=white" />
 
-\[!\[Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit\&logoColor=white)](https://streamlit.io/)
+&#x20; <img src="https://img.shields.io/badge/PyTorch-Deep%20Learning-ee4c2c?logo=pytorch\&logoColor=white" />
 
-\[!\[ResNet18](https://img.shields.io/badge/Model-ResNet18-orange)](https://pytorch.org/vision/stable/models/generated/torchvision.models.resnet18.html)
+&#x20; <img src="https://img.shields.io/badge/Streamlit-App-red?logo=streamlit\&logoColor=white" />
 
-\[!\[Grad-CAM](https://img.shields.io/badge/Explainability-Grad--CAM-purple)](https://arxiv.org/abs/1610.02391)
+&#x20; <img src="https://img.shields.io/badge/Model-ResNet18-orange" />
 
-\[!\[Accuracy](https://img.shields.io/badge/Test%20Accuracy-94.44%25-brightgreen)](https://github.com/secretashuboi/Brain-Tumor-Classification-CNN-GradCAM)
+&#x20; <img src="https://img.shields.io/badge/Explainability-Grad--CAM-purple" />
+
+&#x20; <img src="https://img.shields.io/badge/Test%20Accuracy-94.44%25-brightgreen" />
+
+</p>
 
 
 
@@ -32,7 +40,7 @@
 
 
 
-\*\*Brain Tumor Classification\*\* is a deep learning based brain MRI classification system designed to classify MRI images into four categories:
+\*\*Brain Tumor Classification\*\* is an end-to-end deep learning system designed to classify brain MRI images into four categories:
 
 
 
@@ -46,7 +54,7 @@
 
 
 
-The project explores multiple CNN based experiments and compares their performance with a \*\*ResNet18 transfer learning model\*\*.
+The project explores custom CNN architectures and compares their performance with a \*\*ResNet18 transfer learning model\*\*.
 
 
 
@@ -54,11 +62,49 @@ The final ResNet18 model achieved a \*\*94.44% test accuracy\*\* on 1600 test im
 
 
 
-To make the model more interpretable, the project integrates \*\*Grad-CAM (Gradient-weighted Class Activation Mapping)\*\* to visualize the regions of an MRI image that contributed to the model's prediction.
+To improve model interpretability, the system integrates \*\*Grad-CAM (Gradient-weighted Class Activation Mapping)\*\* to visualize the regions of an MRI image that contributed to the model's prediction.
 
 
 
 The trained model is deployed through an interactive \*\*Streamlit web application\*\*.
+
+
+
+> 💡 \*\*Goal:\*\* Build a practical computer vision system that combines deep learning classification with explainable AI for brain MRI analysis.
+
+
+
+\---
+
+
+
+\## ✨ Key Features
+
+
+
+| Feature | Description |
+
+| ----------------------------------- | ------------------------------------------------ |
+
+| 🧠 \*\*Brain MRI Classification\*\* | Classifies MRI images into four categories |
+
+| 🔬 \*\*ResNet18 Transfer Learning\*\* | Uses a pretrained ResNet18 architecture |
+
+| 📈 \*\*High Classification Accuracy\*\* | Achieves 94.44% test accuracy |
+
+| 🔥 \*\*Grad-CAM Explainability\*\* | Highlights image regions influencing predictions |
+
+| 📊 \*\*Class Probability Analysis\*\* | Displays prediction probabilities for all classes |
+
+| 🖥️ \*\*Interactive Streamlit App\*\* | Provides a simple web-based interface |
+
+| 🖼️ \*\*MRI Image Upload\*\* | Allows users to upload MRI images |
+
+| ⚡ \*\*Real-Time Prediction\*\* | Generates predictions through the deployed model |
+
+| 📚 \*\*Multiple CNN Experiments\*\* | Compares custom CNN models with ResNet18 |
+
+| 💻 \*\*CPU/GPU Compatible\*\* | Supports CUDA when available |
 
 
 
@@ -74,7 +120,15 @@ The trained model is deployed through an interactive \*\*Streamlit web applicati
 
 
 
-\*\*\[Open Brain Tumor Classification App](https://brain-tumor-classification-cnn-gradcam-by-ashu.streamlit.app/)\*\*
+<p align="center">
+
+
+
+🔗 \*\*\[Open Brain Tumor Classification App](https://brain-tumor-classification-cnn-gradcam-by-ashu.streamlit.app/)\*\*
+
+
+
+</p>
 
 
 
@@ -82,17 +136,19 @@ The application allows users to:
 
 
 
-\- Upload a brain MRI image
+\- 🖼️ Upload a brain MRI image
 
-\- Predict the tumor category
+\- 🧠 Predict the tumor category
 
-\- View prediction confidence
+\- 📊 View prediction confidence
 
-\- View class probability distribution
+\- 📈 View class probability distribution
 
-\- Generate Grad-CAM heatmaps
+\- 🔥 Generate Grad-CAM heatmaps
 
-\- View Grad-CAM overlays
+\- 🖼️ View Grad-CAM overlays
+
+\- 💡 Interpret the model's prediction
 
 
 
@@ -104,215 +160,113 @@ The application allows users to:
 
 
 
-\## 📊 Model Performance
+\# 🏗️ System Architecture
 
 
 
-Three deep learning experiments were conducted during the development of the project.
+```mermaid
 
+flowchart TD
 
 
-| Model | Test Accuracy |
 
-|---|---:|
+&#x20;   A\["🖼️ Brain MRI Image"]
 
-| CNN Experiment 1 | 75.00% |
 
-| CNN Experiment 2 | 76.69% |
 
-| \*\*ResNet18\*\* | \*\*94.44%\*\* |
+&#x20;   B\["🔄 Image Preprocessing"]
 
 
 
-\### 🏆 Final ResNet18 Results
+&#x20;   C\["📐 Resize 224 × 224"]
 
 
 
-| Metric | Result |
+&#x20;   D\["🎨 ImageNet Normalization"]
 
-|---|---:|
 
-| Best Validation Accuracy | \*\*98.66%\*\* |
 
-| Test Accuracy | \*\*94.44%\*\* |
+&#x20;   E\["🧠 ResNet18"]
 
-| Test Loss | \*\*0.3431\*\* |
 
-| Correct Predictions | \*\*1511 / 1600\*\* |
 
+&#x20;   F\["🔬 Feature Extraction"]
 
 
-The ResNet18 model significantly outperformed the two custom CNN experiments and was selected as the final model for deployment.
 
+&#x20;   G\["🎯 Modified Fully Connected Layer"]
 
 
-\---
 
+&#x20;   H\["📊 Four-Class Prediction"]
 
 
-\## 🧠 Classification Categories
 
+&#x20;   I\["🧠 Glioma"]
 
 
-The final model performs four-class classification:
 
+&#x20;   J\["🧠 Meningioma"]
 
 
-| Class | Category |
 
-|---|---|
+&#x20;   K\["✅ No Tumor"]
 
-| 0 | Glioma |
 
-| 1 | Meningioma |
 
-| 2 | No Tumor |
+&#x20;   L\["🧠 Pituitary"]
 
-| 3 | Pituitary |
 
 
+&#x20;   M\["📈 Prediction Confidence"]
 
-\---
 
 
+&#x20;   N\["🔥 Grad-CAM"]
 
-\## 🖥️ Application Screenshots
 
 
+&#x20;   O\["🌡️ Heatmap"]
 
-\### 📌 Main Application Interface
 
 
+&#x20;   P\["🖼️ Heatmap Overlay"]
 
-!\[Main Application Interface](assets/main-interface.png)
 
 
+&#x20;   A --> B
 
-The Streamlit application provides an interactive interface where users can upload a brain MRI image and run the trained ResNet18 model.
+&#x20;   B --> C
 
+&#x20;   C --> D
 
+&#x20;   D --> E
 
-\---
+&#x20;   E --> F
 
+&#x20;   F --> G
 
+&#x20;   G --> H
 
-\### 🎯 Prediction Results
 
 
+&#x20;   H --> I
 
-!\[Prediction Results](assets/prediction-results.png)
+&#x20;   H --> J
 
+&#x20;   H --> K
 
+&#x20;   H --> L
 
-The application displays the predicted class, prediction confidence, and probability distribution across all four categories.
 
 
+&#x20;   H --> M
 
-\---
+&#x20;   H --> N
 
 
 
-\### 🔥 Grad-CAM Explainability
+&#x20;   N --> O
 
-
-
-!\[Grad-CAM Explainability](assets/gradcam-explainability.png)
-
-
-
-Grad-CAM highlights important regions of the MRI image that contributed to the model's prediction.
-
-
-
-This provides a visual explanation of the model's decision and improves interpretability.
-
-
-
-\---
-
-
-
-\## 🔬 System Architecture
-
-
-
-```text
-
-&#x20;                   Brain MRI Image
-
-&#x20;                          |
-
-&#x20;                          v
-
-&#x20;                 Image Preprocessing
-
-&#x20;                          |
-
-&#x20;                          v
-
-&#x20;                   Resize 224 x 224
-
-&#x20;                          |
-
-&#x20;                          v
-
-&#x20;                 ImageNet Normalization
-
-&#x20;                          |
-
-&#x20;                          v
-
-&#x20;                      ResNet18
-
-&#x20;                          |
-
-&#x20;                          v
-
-&#x20;                 Feature Extraction
-
-&#x20;                          |
-
-&#x20;                          v
-
-&#x20;               Modified FC Layer
-
-&#x20;                          |
-
-&#x20;                          v
-
-&#x20;                 Four Class Prediction
-
-&#x20;                          |
-
-&#x20;             +------------+------------+
-
-&#x20;             |            |            |
-
-&#x20;             v            v            v
-
-&#x20;          Glioma     Meningioma    No Tumor
-
-&#x20;                          |
-
-&#x20;                          v
-
-&#x20;                      Pituitary
-
-&#x20;                          |
-
-&#x20;                          v
-
-&#x20;                 Prediction Confidence
-
-&#x20;                          |
-
-&#x20;                          v
-
-&#x20;                   Grad-CAM Analysis
-
-&#x20;                          |
-
-&#x20;                          v
-
-&#x20;                 Heatmap + Overlay
+&#x20;   O --> P
 
