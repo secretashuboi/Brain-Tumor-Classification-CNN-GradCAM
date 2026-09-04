@@ -401,34 +401,34 @@ if uploaded_file is not None:
 
             st.markdown(
                 f"""
-                <div class="result-box">
-                    <div class="result-title">
-                        Predicted Class
-                    </div>
-
-                    <div class="result-value">
-                        {predicted_name.upper()}
-                    </div>
-                </div>
-                """,
-                unsafe_allow_html=True
-            )
+            <div class="result-box">
+    		<div class="result-title">
+        	    Predicted Class
+    		</div>
+    		<div class="result-value">
+        	    {predicted_name.upper()}
+    		</div>
+	    </div>
+	    """,
+    		unsafe_allow_html=True
+	    )
+                
 
 
         with col2:
 
             st.markdown(
                 f"""
-                <div class="result-box">
-                    <div class="result-title">
-                        Confidence
-                    </div>
-
-                    <div class="result-value">
-                        {confidence * 100:.2f}%
-                    </div>
+            <div class="result-box">
+            	<div class="result-title">
+                	Confidence
                 </div>
-                """,
+
+                <div class="result-value">
+                    {confidence * 100:.2f}%
+                </div>
+            </div>
+            """,
                 unsafe_allow_html=True
             )
 
